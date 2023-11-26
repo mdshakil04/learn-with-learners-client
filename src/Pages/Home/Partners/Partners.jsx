@@ -6,11 +6,14 @@ import zoom from "../../../assets/images/Partners/zoom-app.svg";
 import google from "../../../assets/images/Partners/google-meet-icon-2020-.svg";
 import adobe from "../../../assets/images/Partners/adobe-photoshop-2.svg";
 import linkedin from "../../../assets/images/Partners/linkedin-icon-2.svg";
+import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 const Partners = () => {
   return (
     <div className=" mx-auto container my-4">
-      <h2 className="text-4xl text-center mb-8">Our Official Partners</h2>
-      <div className=" grid grid-cols-3 gap-8">
+      <SectionTitle
+        heading={"Our Official Partners"}
+      ></SectionTitle>
+      <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-8">
         <div className="card card-side bg-[#E6FFFD]">
           <figure className=" w-1/2 p-4">
             <img

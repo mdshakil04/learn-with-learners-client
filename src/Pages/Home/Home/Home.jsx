@@ -1,6 +1,7 @@
 import Banner from "../Banner/Banner";
 import Partners from "../Partners/Partners";
 import PopulerClasses from "../PopulerClasses/PopulerClasses";
+import Feedback from "./StudentsFeedback/Feedback";
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             <Banner></Banner>
             <Partners></Partners>
             <PopulerClasses></PopulerClasses>
+            <Feedback></Feedback>
         </div>
     );
 };

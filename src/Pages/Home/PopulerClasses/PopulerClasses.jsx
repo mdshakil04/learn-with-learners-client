@@ -1,7 +1,8 @@
-/* eslint-disable no-unused-vars */
+
 import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 
 const PopulerClasses = () => {
   const [sliderRef] = useKeenSlider({
@@ -13,9 +14,11 @@ const PopulerClasses = () => {
         },
   });
   return (
-    <div>
-        <h2 className="text-4xl text-center mb-8">Our Popular Classes</h2>
-      <div ref={sliderRef} className="keen-slider container mx-auto">
+    <section>
+      <SectionTitle
+        heading={"Our Popular Classes"}
+      ></SectionTitle>
+          <div ref={sliderRef} className="keen-slider container mx-auto">
             <div className="keen-slider__slide number-slide1">
                 <img
                     className=" "
@@ -53,7 +56,7 @@ const PopulerClasses = () => {
                 <h2 className="text-4xl text-center font-bold text-white -mt-16">App Development</h2>
             </div>
       </div>
-    </div>
+    </section>
   );
 };
 
