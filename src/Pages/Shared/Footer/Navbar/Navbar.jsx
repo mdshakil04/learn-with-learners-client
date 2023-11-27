@@ -1,8 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../../../assets/images/logos/nav-logo.png";
-import user from '../../../../assets/images/logos/comment_1.png'
+import { AuthContext } from "../../../../Firebase/AuthProvider";
+import { useContext } from "react";
 
 const Navbar = () => {
+  const {user, logOut} = useContext(AuthContext)
+  const handleSignOut = () => {
+    logOut().then().catch();
+  };
   const navLinks = (
     <>
       <li>
@@ -12,7 +17,7 @@ const Navbar = () => {
         <NavLink to="/allClasses">All Classes</NavLink>
       </li>
       <li>
-        <NavLink to="/addTeacher">Teach On</NavLink>
+        <NavLink to="/teachOn">Teach On</NavLink>
       </li>
       <li>
         <NavLink to="/about">About Us</NavLink>
@@ -20,7 +25,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar fixed z-10 bg-opacity-50 bg-[#176b87] text-white mb-24 font-bold  ">
+    //
+    <div className="navbar container rounded-xl  mx-auto md:ml-40 shadow-2xl fixed z-10  bg-[#15495a] text-white mb-24 font-bold  ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -54,40 +60,18 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 text-lg">{navLinks}</ul>
       </div>
       <div className="navbar-end ">
-        {/* <label tabIndex={0} className="">
-              <div className=" ">{user && <p>{user.email}</p>}</div>
-            </label> */}
-        {/* {user ? (
-              <button onClick={handleSignOut} className="btn">
-                Sign Out
-              </button>
-            ) : (
-              <Link to="/login">
-                <button className="btn">Login</button>
-              </Link>
-            )} */}
-        <div className=" mx-4">
-          <details className="dropdown dropdown-end">
-            <summary className="">
-              <div className="avatar">
-                <div className="w-12 rounded-full">
-                  <img src={user} />
-                </div>
-              </div>
-            </summary>
-            <ul className="p-2 shadow menu dropdown-content z-[1] bg-[#176B87]  rounded-box ">
-              <li>
-                <a>Shakil</a>
-              </li>
-              <li>
-                <a>Dashboard</a>
-              </li>
-              <li>
-                <button className="btn btn-outline btn-error">Logout</button>
-              </li>
-            </ul>
-          </details>
-        </div>
+        <label tabIndex={0} className="">
+          <div className=" ">{user && <p>{user.email}</p>}</div>
+        </label>
+        {user ? (
+          <button onClick={handleSignOut} className="btn btn-outline btn-accent">
+            Sign Out
+          </button>
+        ) : (
+          <Link to="/login">
+            <button className="btn btn-outline btn-accent">Login</button>
+          </Link>
+        )}
       </div>
     </div>
   );

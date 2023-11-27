@@ -1,7 +1,8 @@
 import React from "react";
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
+import { Link } from "react-router-dom";
 
-const AddTeacher = () => {
+const TeacherJoin = () => {
   return (
     <div className="">
       <SectionTitle heading={"Become a  Teacher"}></SectionTitle>
@@ -18,7 +19,9 @@ const AddTeacher = () => {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <button className="btn btn-outline btn-accent">Start Teaching today</button>
+            <Link to='/teachOn'>
+              <button className="btn btn-outline btn-accent">Start Teaching today</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -26,4 +29,4 @@ const AddTeacher = () => {
   );
 };
 
-export default AddTeacher;
+export default TeacherJoin;
