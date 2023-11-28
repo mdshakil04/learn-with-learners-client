@@ -1,0 +1,50 @@
+[
+    {
+      "title": "Introduction to Python Programming",
+      "name": "Dr. Sarah Johnson",
+      "image": "https://i.ibb.co/Pcsx5DN/close-up-sound-engineer-studio-with-equipment.jpg",
+      "price": 49.99,
+      "short_description": "Learn the fundamentals of Python programming language.",
+      "total_enrollment": 1200
+    },
+    {
+      "title": "Web Development Bootcamp",
+      "name": "Jason Smith",
+      "image": "https://i.ibb.co/hmcXzPD/world-collapse-doomsday-scene-digital-painting.jpg",
+      "price": 89.99,
+      "short_description": "Master the art of web development with HTML, CSS, and JavaScript.",
+      "total_enrollment": 800
+    },
+    {
+      "title": "Machine Learning Basics",
+      "name": "Dr. Michael Rodriguez",
+      "image": "https://i.ibb.co/Y0QQQ4z/corporate-management-strategy-solution-branding-concept.jpg",
+      "price": 69.99,
+      "short_description": "An introduction to the fundamentals of machine learning.",
+      "total_enrollment": 600
+    },
+    {
+      "title": "Graphic Design Essentials",
+      "name": "Emily Davis",
+      "image": "https://i.ibb.co/8x4HtCV/3d-rendering-website-hosting-concept.jpg",
+      "price": 59.99,
+      "short_description": "Explore the essentials of graphic design with practical projects.",
+      "total_enrollment": 1000
+    },
+    {
+      "title": "Digital Marketing Mastery",
+      "name": "Mark Williams",
+      "image": "https://i.ibb.co/j4ZPVy3/programming-background-collage.jpg",
+      "price": 79.99,
+      "short_description": "Become an expert in digital marketing strategies and techniques.",
+      "total_enrollment": 700
+    },
+    {
+      "title": "Data Science for Beginners",
+      "name": "Dr. Lisa Martinez",
+      "image": "https://i.ibb.co/dpPFBHk/4102879-971.jpg",
+      "price": 59.99,
+      "short_description": "An introductory course to the world of data science and analytics.",
+      "total_enrollment": 900
+    }
+  ]
