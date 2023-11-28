@@ -22,6 +22,9 @@ const Navbar = () => {
       <li>
         <NavLink to="/about">About Us</NavLink>
       </li>
+      <li>
+        <NavLink to="/dashboard/admin">Dashboard</NavLink>
+      </li>
     </>
   );
   return (

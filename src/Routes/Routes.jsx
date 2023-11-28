@@ -9,6 +9,10 @@ import TeachOn from "../Pages/TeachOn/TeachOn";
 import Registration from "../Pages/Authentication/Registration/Registration";
 import Login from "../Pages/Authentication/Login/Login";
 import PrivateRoute from './PrivateRoute';
+import Dashboard from "../Layout/Dashboard";
+import AdminDashboard from "../Pages/Dashboard/AdminDashboard";
+import TeacherDashboard from './../Pages/Dashboard/TeacherDashboard';
+import StudentDashboard from './../Pages/Dashboard/StudentDashboard';
 
 
   export const router = createBrowserRouter([
@@ -38,6 +42,24 @@ import PrivateRoute from './PrivateRoute';
           path:'/register',
           element:<Registration></Registration>
         }
+      ]
+    },
+    {
+      path:'dashboard',
+      element:<Dashboard></Dashboard>,
+      children: [
+          {
+            path:'admin',
+            element:<AdminDashboard></AdminDashboard>,
+          },
+          {
+            path:'teacher',
+            element:<TeacherDashboard></TeacherDashboard>
+          },
+          {
+            path:'student',
+            element:<StudentDashboard></StudentDashboard>
+          }
       ]
     },
   ]);
