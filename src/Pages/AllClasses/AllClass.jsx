@@ -22,7 +22,7 @@ const AllClass = ({ allClass }) => {
         <p>{short_description}</p>
         <h2>Price: ${price}</h2>
         <div className="card-actions justify-start">
-          <div className="badge badge-outline">Total Enrolment: {total_enrollment}</div>
+          <div className="badge badge-outline border-2 border-green-500">Total Enrolment: {total_enrollment}</div>
         </div>
         <div className="card-actions justify-center">
           <button className="btn btn-outline btn-primary">Enroll Now</button>

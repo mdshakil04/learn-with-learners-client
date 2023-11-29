@@ -119,6 +119,15 @@ const TeachOn = () => {
                     <option type="text" value="Video Editing">
                       Video Editing
                     </option>
+                    <option type="text" value="SEO">
+                    SEO
+                    </option>
+                    <option type="text" value="VFX">
+                    VFX
+                    </option>
+                    <option type="text" value="Croudfunding">
+                    Croudfunding
+                    </option>
                   </select>
                 </div>
                 {/* ----------------------------- */}
