@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AllClass = ({ allClass }) => {
-  const { title, name, image, price, short_description, total_enrollment } =
+  const {_id, title, name, image, price, short_description, total_enrollment } =
     allClass;
   return (
     <div className="card  bg-base-100 shadow-xl">
@@ -9,12 +10,12 @@ const AllClass = ({ allClass }) => {
         <img
             className=" lg:h-[350px] w-full"
           src={image}
-          alt="Shoes"
+          alt="Course Image"
         />
       </figure>
       <div className="card-body">
         <h2 className="card-title text-2xl font-bold">
-          Instructor : {title}
+          Course-title : {title}
         </h2>
         <h2 className="card-title">
           Instructor : {name}
@@ -25,7 +26,9 @@ const AllClass = ({ allClass }) => {
           <div className="badge badge-outline border-2 border-green-500">Total Enrolment: {total_enrollment}</div>
         </div>
         <div className="card-actions justify-center">
-          <button className="btn btn-outline btn-primary">Enroll Now</button>
+          <Link to={`/class/${_id}`}>
+             <button className="btn btn-outline btn-primary">Enroll Now</button>
+          </Link>
         </div>
       </div>
     </div>

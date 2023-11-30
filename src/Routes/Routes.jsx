@@ -13,6 +13,7 @@ import Dashboard from "../Layout/Dashboard";
 import AdminDashboard from "../Pages/Dashboard/AdminDashboard";
 import TeacherDashboard from './../Pages/Dashboard/TeacherDashboard';
 import StudentDashboard from './../Pages/Dashboard/StudentDashboard';
+import ClassDetails from "../Pages/ClassDetails/ClassDetails";
 
 
   export const router = createBrowserRouter([
@@ -28,6 +29,12 @@ import StudentDashboard from './../Pages/Dashboard/StudentDashboard';
         {
           path:'/allClasses',
           element:<AllClasses></AllClasses>
+        },
+        {
+          path: '/class/:id',
+          element:<PrivateRoute><ClassDetails></ClassDetails></PrivateRoute>,
+          loader:({params}) => fetch(`http://localhost:5000/class/${params.id}`)
+          
         },
         {
           path:'/teachOn',

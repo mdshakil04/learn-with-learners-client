@@ -12,24 +12,23 @@ const TeachOn = () => {
     const newTeacher = { name, title, experience, category, image };
     console.log(newTeacher);
     // send data to the server
-    // fetch('https://tech-connect-pro-server-jo1olxand-shakils-projects-08aa60f0.vercel.app/product', {
-    //   method: 'POST',
-    //   headers:{
-    //     'content-type':'application/json'
-    //   },
-    //   body: JSON.stringify(newTeacher)
-    // })
-    // .then(res => res.json())
-    // .then(data => {
-    //   console.log(data);
-    //   if(data.insertedId){
-    //     Swal.fire(
-    //       'Product Added Successfully!',
-    //       'Add another Product?',
-    //       'success'
-    //     )
-    //   }
-    // })
+    fetch('http://localhost:5000/teacher', {
+      method: 'POST',
+      headers:{
+        'content-type':'application/json'
+      },
+      body: JSON.stringify(newTeacher)
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      if(data.insertedId){
+        Swal.fire(
+          'Request Send to Admin Successfully!',
+          'success'
+        )
+      }
+    })
   };
   return (
     <div className=" container mx-auto pt-24">
