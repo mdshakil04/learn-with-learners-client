@@ -5,7 +5,7 @@ import user from "../../../../assets/images/logos/comment_1.png"
 const Feedback = () => {
   return (
     <section className=" my-4">
-      <SectionTitle heading={"Our Students Feedback"}></SectionTitle>
+      <SectionTitle heading={"What Our Student Say"}></SectionTitle>
       <div
         className="carousel w-full hero"
         style={{
