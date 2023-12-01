@@ -20,7 +20,7 @@ const TeacherJoin = () => {
               et a id nisi.
             </p>
             <Link to='/teachOn'>
-              <button className="btn btn-outline btn-accent">Start Teaching today</button>
+              <button className="btn btn-outline btn-secondary">Start Teaching today</button>
             </Link>
           </div>
         </div>

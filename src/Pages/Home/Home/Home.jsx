@@ -11,15 +11,15 @@ import Feedback from "./StudentsFeedback/Feedback";
 
 const Home = () => {
     return (
-        <div className="">
+        <div className=" bg-[#98EECC]">
             <Banner></Banner>
             <PopulerClasses></PopulerClasses>
-            <Partners></Partners>
-            <Feedback></Feedback>
-            <OurInfo></OurInfo>
-            <TeacherJoin></TeacherJoin>
             <PreviewClass></PreviewClass>
+            <TeacherJoin></TeacherJoin>
+            <Feedback></Feedback>
+            <Partners></Partners>
             <SearchCourse></SearchCourse>
+            <OurInfo></OurInfo>
         </div>
     );
 };

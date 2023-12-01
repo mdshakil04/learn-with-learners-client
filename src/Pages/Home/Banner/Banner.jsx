@@ -8,7 +8,7 @@ import img3 from "../../../assets/images/Banner/Banner (3).jpg";
 const Banner = () => {
   return (
     <div
-      className="hero lg:h-[950px] "
+      className="hero h-screen "
       style={{
         backgroundImage:
           "url(https://i.ibb.co/K2JwLJC/2150706489.jpg)",
