@@ -13,8 +13,8 @@ const Partners = () => {
       <SectionTitle
         heading={"Our Official Partners"}
       ></SectionTitle>
-      <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-        <div className="card card-side bg-[#E6FFFD]">
+      <div className=" grid lg:grid-cols-3 md:grid-cols-2 gap-8 p-8 rounded-xl shadow-2xl">
+        <div className="card card-side ">
           <figure className=" w-1/2 p-4">
             <img
               src={bkash}
@@ -26,7 +26,7 @@ const Partners = () => {
             <p>bKash is a mobile financial Partner in Bangladesh operating under the authority of BRAC Bank PLC.</p>
           </div>
         </div>
-        <div className="card card-side bg-[#E6FFFD]">
+        <div className="card card-side ">
           <figure className=" w-1/2 p-4">
             <img
               src={paypal}
@@ -38,7 +38,7 @@ const Partners = () => {
             <p>PayPal is the faster, safer way to send and receive money or make an online payment.</p>
           </div>
         </div>
-        <div className="card card-side bg-[#E6FFFD]">
+        <div className="card card-side ">
           <figure className=" w-1/2 p-4">
             <img
               src={google}
@@ -50,7 +50,7 @@ const Partners = () => {
             <p>Google Meet is a high-quality video calling app designed to help you have meaningful and fun interactions</p>
           </div>
         </div>
-        <div className="card card-side bg-[#E6FFFD]">
+        <div className="card card-side ">
           <figure className=" w-1/2 p-4">
             <img
               src={linkedin}
@@ -62,7 +62,7 @@ const Partners = () => {
             <p>LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps..</p>
           </div>
         </div>
-        <div className="card card-side bg-[#E6FFFD]">
+        <div className="card card-side ">
           <figure className=" w-1/2 p-4">
             <img
               src={adobe}
@@ -74,7 +74,7 @@ const Partners = () => {
             <p>Adobe is changing the world through digital experiences. We help our customers create.</p>
           </div>
         </div>
-        <div className="card card-side bg-[#E6FFFD]">
+        <div className="card card-side ">
           <figure className=" w-1/2 p-4">
             <img
               src={zoom}

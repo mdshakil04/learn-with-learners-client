@@ -13,8 +13,8 @@ const Home = () => {
     return (
         <div className="">
             <Banner></Banner>
-            <Partners></Partners>
             <PopulerClasses></PopulerClasses>
+            <Partners></Partners>
             <Feedback></Feedback>
             <OurInfo></OurInfo>
             <TeacherJoin></TeacherJoin>

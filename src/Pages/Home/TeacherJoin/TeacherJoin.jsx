@@ -10,7 +10,7 @@ const TeacherJoin = () => {
         <div className="hero-content flex-col lg:flex-row gap-24">
           <img
             src="https://i.ibb.co/t30KkSb/jonas-kakaroto-KIPqvv-TOC1s-unsplash.jpg"
-            className=" w-1/2 rounded-lg shadow-2xl"
+            className=" lg:w-1/2 rounded-lg shadow-2xl"
           />
           <div>
             <h1 className="text-5xl font-bold">Become an instructor</h1>

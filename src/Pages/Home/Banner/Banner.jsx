@@ -8,17 +8,17 @@ import img3 from "../../../assets/images/Banner/Banner (3).jpg";
 const Banner = () => {
   return (
     <div
-      className="hero lg:h-[700px]"
+      className="hero lg:h-[950px] "
       style={{
         backgroundImage:
-          "url(https://i.ibb.co/PGbpfbb/4590755-2352648.jpg)",
+          "url(https://i.ibb.co/K2JwLJC/2150706489.jpg)",
       }}
     >
-      <div className="hero-overlay bg-opacity-20"></div>
-      <div className="hero-content lg:-ml-[1080px] text-center text-neutral-content">
+      <div className="hero-overlay bg-opacity-20 lg:pb-24"></div>
+      <div className="hero-content text-center ">
         <div className="max-w-md">
           <h1 className="mb-5 text-7xl font-bold">Develop a passion for learning</h1>
-          <p className="mb-5 text-2xl font-bold">
+          <p className="mb-12 text-2xl text-white font-bold">
           “Learning is not attained by chance, it must be sought for with ardour and diligence.”
           </p>
         </div>

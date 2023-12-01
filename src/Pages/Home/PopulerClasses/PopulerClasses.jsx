@@ -14,7 +14,7 @@ const PopulerClasses = () => {
         },
   });
   return (
-    <section>
+    <section className=" my-12">
       <SectionTitle
         heading={"Our Popular Classes"}
       ></SectionTitle>

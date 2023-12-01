@@ -5,9 +5,9 @@ const SearchCourse = () => {
   return (
     <div className=" my-8">
       <SectionTitle heading={"Search Your Course"}></SectionTitle>
-      <div className=" w-full flex">
-        <div className=" bg-[#2B2A4C] w-1/2 text-white text-center justify-center items-center p-24 py-24">
-          <h2 className="text-4xl font-bold">
+      <div className=" w-full lg:flex">
+        <div className=" bg-[#2B2A4C] lg:w-1/2 text-white text-center justify-center items-center md:p-24 md:py-24">
+          <h2 className="md:text-4xl font-bold">
             Register now and get a discount
             <br /> <span className=" text-yellow-400">50%</span> discount until
             1 January
@@ -25,7 +25,7 @@ const SearchCourse = () => {
           </p>
           <button className=" btn btn-outline btn-success">Register Now</button>
         </div>
-        <div className="card py-4 shrink-0 w-1/2 shadow-2xl bg-base-100" 
+        <div className="card py-4 shrink-0 lg:w-1/2 shadow-2xl bg-base-100" 
             style={{backgroundImage: 'url(https://i.ibb.co/8x4HtCV/3d-rendering-website-hosting-concept.jpg)'}}
         >
             <h2 className="text-4xl text-center text-green-600">Search Your Course</h2>

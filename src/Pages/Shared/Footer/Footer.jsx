@@ -1,36 +1,14 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import logo from '../../../../src/assets/images/logos/lwl-logo.png'
+import logo from "../../../../src/assets/images/logos/lwl-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-4 bg-[#E6FFFD] ">
-      <aside>
-        <div className=" lg:flex gap-60">
-          <nav>
-            <header className="footer-title text-xl">Contact</header>
-            <a className="link link-hover">Branding</a>
-            <a className="link link-hover">Design</a>
-            <a className="link link-hover">Marketing</a>
-            <a className="link link-hover">Advertisement</a>
-          </nav>
-          <nav>
-            <header className="footer-title text-xl">Address</header>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
-          </nav>
-          <nav>
-            <header className="footer-title text-xl">Legal</header>
-            <a className="link link-hover">Terms of use</a>
-            <a className="link link-hover">Privacy policy</a>
-            <a className="link link-hover">Cookie policy</a>
-          </nav>
-        </div>
-      </aside>
-
+    // bg-[#E6FFFD]
+    <footer className="footer footer-center p-4  bg-[#15495a] text-white ">
+      <img className=" w-1/7" src={logo} alt="" />
+      <p className="font-bold text-4xl font-mono">Learn With Learners</p>
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a className=" text-blue-600">
@@ -68,11 +46,33 @@ const Footer = () => {
           </a>
         </div>
       </nav>
-      <img className=" w-1/7" src={logo} alt="" />
-      <p className="font-bold text-4xl font-mono">
-          Learn With Learners
-        </p>
-      <p className=" text-red-600 font-bold text-lg">Copyright © 2023 - All right reserved</p>
+      <aside>
+        <div className=" lg:flex gap-60">
+          <nav className=" flex flex-col">
+            <header className="footer-title text-xl">Contact</header>
+            <a className="link link-hover">Branding</a>
+            <a className="link link-hover">Design</a>
+            <a className="link link-hover">Marketing</a>
+            <a className="link link-hover">Advertisement</a>
+          </nav>
+          <nav className=" flex flex-col">
+            <header className="footer-title text-xl">Address</header>
+            <a className="link link-hover">About us</a>
+            <a className="link link-hover">Contact</a>
+            <a className="link link-hover">Jobs</a>
+            <a className="link link-hover">Press kit</a>
+          </nav>
+          <nav className=" flex flex-col">
+            <header className="footer-title text-xl">Legal</header>
+            <a className="link link-hover">Terms of use</a>
+            <a className="link link-hover">Privacy policy</a>
+            <a className="link link-hover">Cookie policy</a>
+          </nav>
+        </div>
+      </aside>
+      <p className=" text-red-600 font-bold text-lg">
+        Copyright © 2023 - All right reserved
+      </p>
     </footer>
   );
 };

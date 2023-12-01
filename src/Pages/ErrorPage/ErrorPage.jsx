@@ -5,7 +5,7 @@ const ErrorPage = () => {
     return (
         <div className=' text-center items-center flex flex-col'>
             <div className=''>
-            <img className=' lg:h-[800px]' src="https://i.ibb.co/HgR1Jvd/21586054-Na-Nov-26.jpg" alt="" />
+            <img className=' lg:h-[700px]' src="https://i.ibb.co/HgR1Jvd/21586054-Na-Nov-26.jpg" alt="" />
             </div>
             <h2 className=" text-4xl text-center">Data is on the way..Please! Reload 3 times</h2>
             <p className=' text-2xl text-red-700'>or</p>
