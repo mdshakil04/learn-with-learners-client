@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 
 const ClassDetails = () => {
@@ -22,7 +22,9 @@ const ClassDetails = () => {
             <p className="mb-2 font-bold">Description: {short_description}</p>
             <p className="mb-2 font-bold">Price: $<span className=" text-red-700">{price}</span></p>
             <div className="card-actions mt-2">
-              <button className="btn btn-outline btn-primary">Pay Now</button>
+              <Link to="/payment">
+                  <button className="btn btn-outline btn-primary">Pay Now</button>
+              </Link>
             </div>
           </div>
         </div>

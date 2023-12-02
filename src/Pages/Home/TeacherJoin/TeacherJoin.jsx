@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const TeacherJoin = () => {
   return (
-    <div className="">
+    <div className=" mt-12">
       <SectionTitle heading={"Become a  Teacher"}></SectionTitle>
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row gap-24">
@@ -20,7 +20,7 @@ const TeacherJoin = () => {
               et a id nisi.
             </p>
             <Link to='/teachOn'>
-              <button className="btn btn-outline btn-secondary">Start Teaching today</button>
+              <button className="btn btn-outline btn-info">Start Teaching today</button>
             </Link>
           </div>
         </div>

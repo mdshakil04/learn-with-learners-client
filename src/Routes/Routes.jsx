@@ -14,6 +14,7 @@ import AdminDashboard from "../Pages/Dashboard/AdminDashboard";
 import TeacherDashboard from './../Pages/Dashboard/TeacherDashboard';
 import StudentDashboard from './../Pages/Dashboard/StudentDashboard';
 import ClassDetails from "../Pages/ClassDetails/ClassDetails";
+import Payment from "../Pages/Dashboard/Payment/Payment";
 
 
   export const router = createBrowserRouter([
@@ -35,6 +36,10 @@ import ClassDetails from "../Pages/ClassDetails/ClassDetails";
           element:<PrivateRoute><ClassDetails></ClassDetails></PrivateRoute>,
           loader:({params}) => fetch(`http://localhost:5000/class/${params.id}`)
           
+        },
+        {
+          path:'/payment',
+          element: <Payment></Payment>
         },
         {
           path:'/teachOn',
