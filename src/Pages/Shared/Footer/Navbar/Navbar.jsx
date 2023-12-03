@@ -64,7 +64,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end ">
         <label tabIndex={0} className="">
-          <div className=" ">{user && <p>{user.email}</p>}</div>
+          <div className=" text-xs">{user && <p>{user.email}</p>}</div>
         </label>
         {user ? (
           <button onClick={handleSignOut} className="btn btn-outline btn-accent">

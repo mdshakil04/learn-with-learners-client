@@ -41,7 +41,7 @@ const TeacherDashboard = () => {
               </a>
             </li>
             <li>
-              <a>My Class</a>
+              <Link to='/dashboard/myClasses'>My Class</Link>
             </li>
             <li>
               <a>Profile</a>
