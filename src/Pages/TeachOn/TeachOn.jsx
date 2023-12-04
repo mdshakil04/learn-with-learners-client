@@ -12,7 +12,8 @@ const TeachOn = () => {
     const newTeacher = { name, title, experience, category, image };
     console.log(newTeacher);
     // send data to the server
-    fetch('http://localhost:5000/teacher', {
+    fetch('https://learn-with-learners-server.vercel.app/teachers', {
+      mode: 'no-cors',
       method: 'POST',
       headers:{
         'content-type':'application/json'
@@ -24,8 +25,7 @@ const TeachOn = () => {
       console.log(data);
       if(data.insertedId){
         Swal.fire(
-          'Request Send to Admin Successfully!',
-          'success'
+          'Request Submitted Successfully!',
         )
       }
     })
@@ -147,7 +147,7 @@ const TeachOn = () => {
                 <input
                   className=" text-xl font-bold btn border-2 border-slate-700 btn-info mt-4 w-full"
                   type="submit"
-                  value="Submit Now"
+                  value="Submit For Review"
                 />
               </div>
             </form>

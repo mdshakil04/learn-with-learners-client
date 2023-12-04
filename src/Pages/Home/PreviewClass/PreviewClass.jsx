@@ -17,9 +17,9 @@ const PreviewClass = () => {
                 src="https://www.youtube.com/embed/YRzkxLmZH9g?si=DFBMNJ6TyzB3fCF5"
                 title="YouTube video player"
                 // eslint-disable-next-line react/no-unknown-property
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className=" lg:w-1/2 text-start lg:mt-24 p-12">

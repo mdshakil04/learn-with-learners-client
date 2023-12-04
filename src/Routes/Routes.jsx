@@ -35,7 +35,7 @@ import MyClass from "../Pages/Dashboard/MyClass/MyClass";
         {
           path: '/class/:id',
           element:<PrivateRoute><ClassDetails></ClassDetails></PrivateRoute>,
-          loader:({params}) => fetch(`http://localhost:5000/class/${params.id}`)
+          loader:({params}) => fetch(`https://learn-with-learners-server.vercel.app/class/${params.id}`)
           
         },
         {

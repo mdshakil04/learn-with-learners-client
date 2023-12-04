@@ -13,15 +13,16 @@ const AddClass = () => {
     const newClass = { name, title, price, description,enrollment, donarImage };
     console.log(newClass);
     // send data to the server
-    fetch('http://localhost:5000/addedClass', {
+    fetch('https://learn-with-learners-server.vercel.app/addedClass', {
+      mode: 'no-cors',
       method: 'POST',
       headers:{
         'content-type':'application/json'
       },
       body: JSON.stringify(newClass)
     })
-    .then(res => res.json())
-    .then(data => {
+    .then((res) => res.json())
+    .then((data) => {
       console.log(data);
       if(data.insertedId){
         Swal.fire(

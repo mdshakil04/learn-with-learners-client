@@ -4,7 +4,7 @@ import { AuthContext } from "../../../../Firebase/AuthProvider";
 import { useContext } from "react";
 
 const Navbar = () => {
-  const {user, logOut} = useContext(AuthContext)
+  const { user, logOut } = useContext(AuthContext);
   const handleSignOut = () => {
     logOut().then().catch();
   };
@@ -63,11 +63,14 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 text-lg">{navLinks}</ul>
       </div>
       <div className="navbar-end ">
-        <label tabIndex={0} className="">
-          <div className=" text-xs">{user && <p>{user.email}</p>}</div>
+        <label tabIndex={0} className=" mr-4">
+          <div className="">{user && <p className=" text-2xl">{user.displayName}</p>}</div>
         </label>
         {user ? (
-          <button onClick={handleSignOut} className="btn btn-outline btn-accent">
+          <button
+            onClick={handleSignOut}
+            className="btn btn-outline btn-accent"
+          >
             Sign Out
           </button>
         ) : (

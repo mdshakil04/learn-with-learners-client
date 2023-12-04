@@ -5,7 +5,7 @@ import AllClass from './AllClass';
 const AllClasses = () => {
     const [allClass, setAllClass] = useState([]);
     useEffect(() =>{
-        fetch("http://localhost:5000/class")
+        fetch("https://learn-with-learners-server.vercel.app/class")
         .then(res => res.json())
         .then(data => setAllClass(data))
     },[]);
