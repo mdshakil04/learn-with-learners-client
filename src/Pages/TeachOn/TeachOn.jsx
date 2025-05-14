@@ -37,7 +37,7 @@ const TeachOn = () => {
         ></SectionTitle>
       <div className=" flex items-center">
         <div className=" w-1/2">
-          <div className=" container bg-[#3caef0ea] mx-auto p-8 my-8">
+          <div className=" container mx-auto p-8 my-8">
             {/* onSubmit={handleAddProduct} */}
             <form onSubmit={handleAddTeacher} className="">
               <div className=" grid md:grid-cols-2  gap-4">

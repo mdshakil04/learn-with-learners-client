@@ -17,7 +17,7 @@ const Banner = () => {
       <div className="hero-overlay bg-opacity-20 lg:pb-24"></div>
       <div className="hero-content text-center ">
         <div className="max-w-md">
-          <h1 className="mb-5 lg:text-7xl text-[#15495a] uppercase font-bold text-4xl">Develop a passion for learning</h1>
+          <h1 className="mb-5 lg:text-6xl text-[#15495a] uppercase font-bold text-4xl">Develop a passion for learning</h1>
           <p className="mb-12 text-2xl text-white font-bold">
           “Learning is not attained by chance, it must be sought for with ardour and diligence.”
           </p>
