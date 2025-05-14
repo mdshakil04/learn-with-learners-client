@@ -11,7 +11,7 @@ import Feedback from "./StudentsFeedback/Feedback";
 
 const Home = () => {
     return (
-        <div className=" bg-[#98EECC]">
+        <div className=" ">
             <Banner></Banner>
             <PopulerClasses></PopulerClasses>
             <PreviewClass></PreviewClass>

@@ -29,7 +29,7 @@ const Navbar = () => {
   );
   return (
     //
-    <div className="navbar container rounded-xl  mx-auto lg:ml-40 shadow-2xl fixed z-10  bg-[#15495a] text-white mb-24 font-bold  ">
+    <div className="navbar container rounded-xl  mx-auto lg:ml-40 shadow-2xl fixed z-10  bg-[#15495a] text-white mb-24 font-bold w-full ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
