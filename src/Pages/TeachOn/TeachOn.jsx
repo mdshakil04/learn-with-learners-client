@@ -31,13 +31,13 @@ const TeachOn = () => {
     })
   };
   return (
-    <div className=" container mx-auto pt-24">
+    <div className="  pt-24">
         <SectionTitle
             heading={'Join as a Teacher'}
         ></SectionTitle>
-      <div className=" flex items-center">
-        <div className=" w-1/2">
-          <div className=" container mx-auto p-8 my-8">
+      <div className=" lg:flex items-center">
+        <div className=" lg:w-1/2">
+          <div className="  p-8 my-8">
             {/* onSubmit={handleAddProduct} */}
             <form onSubmit={handleAddTeacher} className="">
               <div className=" grid md:grid-cols-2  gap-4">
@@ -154,7 +154,7 @@ const TeachOn = () => {
           </div>
         </div>
         {/* Form Image */}
-        <div className="h-full w-1/2">
+        <div className="lg:h-full lg:w-1/2">
           <img
             className=" w-full "
             src="https://i.ibb.co/5hDM5mX/3d-rendering-website-hosting-concept.jpg"

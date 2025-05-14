@@ -1,4 +1,4 @@
-
+import TeachOn from "../../TeachOn/TeachOn";
 import Banner from "../Banner/Banner";
 import OurInfo from "../OurInfo/OurInfo";
 import Partners from "../Partners/Partners";
@@ -8,20 +8,22 @@ import SearchCourse from "../SearchCourse/SearchCourse";
 import TeacherJoin from "../TeacherJoin/TeacherJoin";
 import Feedback from "./StudentsFeedback/Feedback";
 
-
 const Home = () => {
-    return (
-        <div className=" ">
-            <Banner></Banner>
-            <PopulerClasses></PopulerClasses>
-            <PreviewClass></PreviewClass>
-            <TeacherJoin></TeacherJoin>
-            <Feedback></Feedback>
-            <Partners></Partners>
-            <SearchCourse></SearchCourse>
-            <OurInfo></OurInfo>
-        </div>
-    );
+  return (
+    <div className=" ">
+      <Banner></Banner>
+      <div className=" container mx-auto">
+        <PopulerClasses></PopulerClasses>
+        <PreviewClass></PreviewClass>
+        <TeacherJoin></TeacherJoin>
+        <Partners></Partners>
+        <SearchCourse></SearchCourse>
+        <TeachOn></TeachOn>
+        <OurInfo></OurInfo>
+      </div>
+      {/* <Feedback></Feedback> */}
+    </div>
+  );
 };
 
 export default Home;

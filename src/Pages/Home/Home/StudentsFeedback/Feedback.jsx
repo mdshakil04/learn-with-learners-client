@@ -7,7 +7,7 @@ const Feedback = () => {
     <section className=" my-12">
       <SectionTitle heading={"What Our Student Say"}></SectionTitle>
       <div
-        className="carousel w-full hero"
+        className="carousel hero"
         style={{
           backgroundImage:
             "url(https://i.ibb.co/dpPFBHk/4102879-971.jpg)",

@@ -17,6 +17,7 @@ const Partners = () => {
         <div className="lg:card lg:card-side grid grid-cols-1 ">
           <figure className=" lg:w-1/2 p-4">
             <img
+              className=""
               src={bkash}
               alt="Partner"
             />
